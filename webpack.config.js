@@ -44,6 +44,10 @@ const config = {
     new HTMLWebpackPlugin({
       filename: 'catalog.html',
       template: path.resolve(__dirname, './src/catalog.html')
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'catalog-prod.html',
+      template: path.resolve(__dirname, './src/catalog-prod.html')
     }), 
     new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash].css' }),
     new CleanWebpackPlugin()
