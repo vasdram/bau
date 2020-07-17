@@ -41,6 +41,10 @@ const config = {
       filename: 'contacts.html',
       template: path.resolve(__dirname, './src/contacts.html')
     }), 
+    new HTMLWebpackPlugin({
+      filename: 'catalog.html',
+      template: path.resolve(__dirname, './src/catalog.html')
+    }), 
     new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash].css' }),
     new CleanWebpackPlugin()
   ],
