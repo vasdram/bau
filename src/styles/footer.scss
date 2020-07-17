@@ -1,0 +1,26 @@
+@import './colors.scss';
+
+.footer{
+    background-color: $black;
+    padding-top: 20px;
+    height: auto;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__copy{
+        color: $white;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer{
+        height: 70px;
+        &__wrapper{
+            flex-direction: row;
+            justify-content: space-between;
+        }              
+    }   
+}

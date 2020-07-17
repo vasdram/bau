@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.wrapper{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.z{
+  min-height: 100%;
+  margin-bottom: -70px;
+}
