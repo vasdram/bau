@@ -1,10 +1,52 @@
 @import './colors.scss';
 
 .header {
-    height: 90px;
+    
     background-color: #fff;
-    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
     padding:  0 20px;
+    &__phone {
+        position: relative;
+        &-item {
+            margin-bottom: 5px;
+            span{
+                font-size: 13px;
+                margin-left: 10px;
+            }
+        }
+        &-link{
+            font-size: 14px;
+            color: $black;
+            text-decoration: none;
+            margin-bottom: 5px;
+            &:hover{
+                color: $black;
+                text-decoration: none;
+            }
+        }
+        &-btn{
+            margin-left: 10px;
+            position: relative;
+            font-size: 14px;
+            padding-left: 40px;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-12px);
+                // border: 1px solid $green;
+                border-radius: 50%;    
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                background-image: url('../images/phone.svg');
+                background-repeat: no-repeat;
+                background-size: 80%;
+                background-position: 50%;
+            }
+        }
+        
+    }
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -22,6 +64,17 @@
 
 @media (min-width: 800px) {
     .header{
-        padding:  0;       
+        padding: 10px  0 20px;
+        //height: 90px;
+       // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1); 
+       border-bottom: 1px solid rgba(0,0,0,.2);
+        &__menu{
+            max-width: 1140px;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }     
     }   
 }
