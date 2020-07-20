@@ -130,6 +130,17 @@
                 position: relative;
                 &_sub {
                     position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 4px;
+                        right: -17px;
+                        width: 10px;
+                        height: 10px;
+                        background-image: url('../images/arrow.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
                     &:hover .menu__sub-list{
                         display: block;
                     }    
@@ -145,17 +156,18 @@
             }
         }
         &__sub-list {
-            // display: none;
+            display: none;
             padding: 10px 25px;
             background-color: $white;
             position: absolute;
             border-top: 2px solid $green;
-            top: 29px;
+            top: 28px;
             left: 0;
             box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
             z-index: 100;
             li{
-                padding: 0;    
+                padding: 0;
+         
             }
         }
         &__sub-item{

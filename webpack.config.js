@@ -3,6 +3,8 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const CopyPlugin = require('copy-webpack-plugin');
+
 const config = {
   mode: 'development',
   entry: './src/js/index.js',
@@ -12,6 +14,19 @@ const config = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            '@babel/preset-env'
+          ],
+          plugins: [
+            '@babel/plugin-proposal-class-properties'
+          ]
+        }
+      },
       {
         test: /\.s[ac]ss$/,
         use: [
@@ -33,6 +48,11 @@ const config = {
     ]
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: './src/images', to: './assets/images' },
+      ],
+    }),
     new HTMLWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html')
@@ -48,6 +68,10 @@ const config = {
     new HTMLWebpackPlugin({
       filename: 'catalog-prod.html',
       template: path.resolve(__dirname, './src/catalog-prod.html')
+    }), 
+    new HTMLWebpackPlugin({
+      filename: 'card.html',
+      template: path.resolve(__dirname, './src/card.html')
     }), 
     new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash].css' }),
     new CleanWebpackPlugin()
