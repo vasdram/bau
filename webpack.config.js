@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -37,6 +38,14 @@ const config = {
         ]
       },
       {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: 'css-loader' },
+        ]
+      },
+      {
         test: /\.(png|jpg|jpeg|svg|bmp|gif)$/,
         loader: 'file-loader',
         options: {
@@ -48,6 +57,10 @@ const config = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new CopyPlugin({
       patterns: [
         { from: './src/images', to: './assets/images' },
