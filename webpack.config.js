@@ -70,6 +70,10 @@ const config = {
       template: path.resolve(__dirname, './src/catalog-prod.html')
     }), 
     new HTMLWebpackPlugin({
+      filename: 'contacts.html',
+      template: path.resolve(__dirname, './src/contacts.html')
+    }), 
+    new HTMLWebpackPlugin({
       filename: 'card.html',
       template: path.resolve(__dirname, './src/card.html')
     }), 
