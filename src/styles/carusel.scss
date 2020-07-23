@@ -1,0 +1,17 @@
+.carusel{
+    position: relative;
+    &__slide{
+        height: 400px;
+        overflow: hidden;
+    }
+    .owl-prev{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+    .owl-next{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+    }
+}
