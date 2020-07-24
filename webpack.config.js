@@ -87,6 +87,7 @@ const config = {
       filename: 'contacts.html',
       template: path.resolve(__dirname, './src/contacts.html')
     }), 
+    
     new HTMLWebpackPlugin({
       filename: 'card.html',
       template: path.resolve(__dirname, './src/card.html')
