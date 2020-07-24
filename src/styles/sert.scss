@@ -1,0 +1,14 @@
+.sert{
+  margin-top: 100px;
+  &__head {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__img{
+    img{
+      max-width: 100%;
+    }
+  }
+}
