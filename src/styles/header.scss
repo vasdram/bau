@@ -3,6 +3,14 @@
 .header {
     background-color: #fff;
     padding:  0 20px;
+    &__btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .btn{
+            margin-left: 10px;
+        }
+    }
     &__phone {
         position: relative;
         &-item {
@@ -45,6 +53,48 @@
             }
         }
         
+    }
+    &__mail{
+        position: relative;
+        &-item {
+            margin-bottom: 5px;
+            span{
+                font-size: 13px;
+                margin-left: 5px;
+            }
+        }
+        &-link{
+            font-size: 14px;
+            color: $black;
+            text-decoration: none;
+            margin-bottom: 5px;
+            &:hover{
+                color: $black;
+                text-decoration: none;
+            }
+        }
+        &-btn{
+            margin-left: 10px;
+            position: relative;
+            font-size: 14px;
+            padding-left: 40px;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-12px);
+                // border: 1px solid $green;
+                border-radius: 50%;    
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                background-image: url('../images/envelop-white.svg');
+                background-repeat: no-repeat;
+                background-size: 80%;
+                background-position: 50%;
+            }
+        }
     }
     &__wrapper{
         display: flex;
