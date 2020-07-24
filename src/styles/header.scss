@@ -4,7 +4,7 @@
     background-color: #fff;
     padding:  0 20px;
     &__btns{
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: flex-start;
         .btn{
@@ -13,6 +13,7 @@
     }
     &__phone {
         position: relative;
+        display: none;
         &-item {
             margin-bottom: 5px;
             span{
@@ -56,23 +57,6 @@
     }
     &__mail{
         position: relative;
-        &-item {
-            margin-bottom: 5px;
-            span{
-                font-size: 13px;
-                margin-left: 5px;
-            }
-        }
-        &-link{
-            font-size: 14px;
-            color: $black;
-            text-decoration: none;
-            margin-bottom: 5px;
-            &:hover{
-                color: $black;
-                text-decoration: none;
-            }
-        }
         &-btn{
             margin-left: 10px;
             position: relative;
@@ -117,6 +101,12 @@
         //height: 90px;
        // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1); 
        border-bottom: 1px solid $green;
+       &__btns{
+        display: flex;
+       }
+       &__phone{
+        display: block;
+       }
         &__menu{
             max-width: 1140px;
             margin: auto;

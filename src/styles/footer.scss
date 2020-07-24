@@ -12,6 +12,8 @@
     &__copy{
         color: $white;
         font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
     }
 }
 
@@ -21,6 +23,10 @@
         &__wrapper{
             flex-direction: row;
             justify-content: space-between;
+        }
+        &__copy{
+            text-align: left;
+            padding-bottom: 0;
         }              
     }   
 }
