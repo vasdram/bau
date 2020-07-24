@@ -9,6 +9,21 @@
     background-color: $white;
     z-index: 100;
     transition: width, .3s;
+    &__sub-list {
+        padding: 10px 25px;
+   
+        li{
+            padding: 0;
+     
+        }
+    }
+    &__sub-item{
+        margin: 0 0 10px;
+    }
+    &__sub-link{
+        color: $black;
+        text-decoration: none;
+    }
     &_footer {
         background-color: transparent;
         .menu__list {
@@ -38,38 +53,61 @@
         }
     }
     &__head {
-        padding: 0 40px;
-        height: 60px;
+        padding: 0 20px 20px;
+        margin-bottom: 20px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        border-bottom: 1px solid rgba(0,0,0, .2);
         &-logo {
             background-image: url(../images/main-logo.png);
-            width: 120px;
-            height: 40px;
+            width: 180px;
+            height: 60px;
             background-repeat: no-repeat;
             background-size: contain;
         }
         &-close {
             background-image: url(../images/close.svg);
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             background-repeat: no-repeat;
             background-size: contain;
         }
     }
     &__list {
         list-style: none;
-        padding: 0;
+        padding: 0 20px;
         margin: 0;
         &-item {
             padding: 20px 40px;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid rgba(0,0,0, .4);
             cursor: pointer;
             transition: all .3s;
             &:hover{
                 background-color: rgba(0,0,0, .1);
+            }
+            &_sub {
+                position: relative;
+                .menu__list-link{
+                    display: block;
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 15px;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url('../images/arrow.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+                &:hover .menu__sub-list {
+                    display: block;
+                }    
             }
         }
         &-link {
@@ -126,7 +164,8 @@
         &__list {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;  
+            justify-content: space-around; 
+            padding: 0; 
             &-item {
                 border: none;
                 padding: 0 0 10px;
