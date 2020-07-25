@@ -19,13 +19,15 @@ menuHandler()
 
 
 document.addEventListener('click', (e) => {
-    e.preventDefault()
+    
     
     if(e.target.classList.contains('header__phone-btn')) {
+        e.preventDefault()
         orderCallForm.open()
     }
 
     if(e.target.classList.contains('header__mail-btn')) {
+        e.preventDefault()
         feedbackForm.open()
     }
 
