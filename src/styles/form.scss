@@ -1,0 +1,16 @@
+.form{
+    width: 100%;
+    &__btn-line{
+        margin: 10px 0;
+        text-align: center;
+        .btn{
+            margin: auto;
+        }
+    }
+    &__line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }   
+}
