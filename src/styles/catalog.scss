@@ -18,7 +18,10 @@
             &-item{
                 margin: 0;
                 border-bottom: 1px solid rgba(0,0,0, .3);
-                &_select{
+                &.active{
+                    .catalog__nav-chart-sub-list{
+                        display: block;
+                    }
                     .catalog__nav-chart-link{
                         font-weight: 700;
                         &:after{
@@ -54,6 +57,7 @@
             &-sub-list{
                 // padding: 10px 0 0;
                 margin-bottom: 0;
+                display: none;
             }
             &-sub-item{
                 border-top: 1px solid rgba(0,0,0, .3);

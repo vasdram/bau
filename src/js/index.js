@@ -2,6 +2,7 @@ import '../../node_modules/animate.css/animate.css'
 import "jquery-mask-plugin"
 import * as $ from 'jquery';
 
+import './catalog.js';
 import {carusel} from './carusel.js';
 import {tabsHandler} from './tabs.js';
 import {menuHandler} from './menu.js';
@@ -25,7 +26,7 @@ document.addEventListener('click', (e) => {
     }
 
     if(e.target.classList.contains('header__mail-btn')) {
-        orderCallForm.open()
+        feedbackForm.open()
     }
 
     if(e.target.classList.contains('sert__img-img')) {

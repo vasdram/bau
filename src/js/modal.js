@@ -145,8 +145,5 @@ export const sertModal = new Modal({
 
 
 jQuery(document).ready(function(){
-
 	$('.input-phone').mask('+0 (000) 000 00 00');
-	
-
 });
