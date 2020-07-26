@@ -23,6 +23,9 @@
     &__sub-link{
         color: $black;
         text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        white-space: nowrap;
     }
     &_footer {
         background-color: transparent;

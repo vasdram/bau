@@ -1,6 +1,17 @@
 @import "./colors.scss";
 .carusel{
     position: relative;
+    &_about{
+        margin-bottom: 100px;
+        .carusel__slide{
+            height: 200px;
+            width: 250px;
+            overflow: visible;
+            img{
+                max-height: 100%;
+            }
+        }
+    }
     &__slide{
         height: 400px;
         overflow: hidden;

@@ -1,15 +1,27 @@
+@import './colors.scss';
 .sert{
-  margin-top: 100px;
+  margin-top: 40px;
+  &__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   &__head {
     margin-bottom: 20px;
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
   }
+  &__txt{
+    width: 55%;
+    line-height: 1.5;
+    color: $gray; 
+  }
   &__img{
     cursor: pointer;
-    width: 70%;
-    margin: auto;
+    margin-top: 10px;
+    width: 40%;
     img{
       max-width: 100%;
     }
@@ -26,5 +38,15 @@
 @media (max-width: 800px) {
   .sert{
     margin-top: 40px;
+    &__wrapper{
+      flex-direction: column;     
+    }
+    &__txt{
+      width: 100%; 
+    }
+    &__img{
+      width: 100%;
+    }
+  
   }
 }

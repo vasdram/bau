@@ -68,6 +68,10 @@ const config = {
       ],
     }),
     new HTMLWebpackPlugin({
+      filename: 'about.html',
+      template: path.resolve(__dirname, './src/about.html')
+    }),
+    new HTMLWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html')
     }),
