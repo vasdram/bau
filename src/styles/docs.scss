@@ -1,0 +1,44 @@
+@import './colors.scss';
+.docs{
+    &__head {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-size: 28px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      &__sert-list{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      &__sert-item{
+          width: 250px;
+      }
+      &__sert-item-head{
+          width: 230px;
+          margin: auto;
+          img{max-width: 100%;}
+      }
+      &__sert-one-head{
+        width: 45%;
+        margin: auto;
+        text-align: center;
+        img{max-width: 100%;}
+     }
+      &__sert-item-name{
+          text-align: center;
+          margin: 20px 0;
+          font-weight: 300;
+          font-size: 18px;
+          p{
+              font-size: 14px;
+              line-height: 1.4;
+              height: 50px;
+          }
+      }
+      &__sert-one-btn{
+          max-width: 200px;
+          margin: auto;
+      }
+}
