@@ -38,4 +38,10 @@ document.addEventListener('click', (e) => {
 })
 
 
-
+$(window).on('load', function(){
+    if(!window.location.hash) return
+    var top = $(window.location.hash).offset().top;
+    $('html,body').stop().animate({
+      scrollTop: top
+    }, 1000);
+  });

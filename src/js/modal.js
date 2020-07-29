@@ -102,21 +102,13 @@ const feedbackFormContent = `<form class="form" action="">
         <textarea name="" class="input-txt" placeholder="Сообщение" required id="" cols="30" rows="10"></textarea>
     </div>
 </div>
+
 <div class="form__line">
     <div class="input__line">    
         <label class="checkbox">
             <input type="checkbox" class="checkbox__input" name="" id="">
             <div class="checkbox__img"></div>
-            <div class="checkbox__text">Отправить копию на почту</div>
-        </label>
-    </div>
-</div>
-<div class="form__line">
-    <div class="input__line">    
-        <label class="checkbox">
-            <input type="checkbox" class="checkbox__input" name="" id="">
-            <div class="checkbox__img"></div>
-            <div class="checkbox__text">Cогласие на обработку персональных данных</div>
+            <a href="" class="checkbox__text">Cогласие на обработку персональных данных</a>
         </label>
     </div>
 </div>
