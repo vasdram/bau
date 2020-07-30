@@ -50,7 +50,7 @@ $(window).on('load', function(){
 
 
   $('.doc-link').on('click', function(e) {
-    e.preventDefault()
+    
     var top = $(`div[data-id="${e.target.dataset.hash}"]`).offset().top - 140;
     $('html,body').stop().animate({
       scrollTop: top
