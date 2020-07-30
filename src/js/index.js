@@ -39,9 +39,20 @@ document.addEventListener('click', (e) => {
 
 
 $(window).on('load', function(){
+    console.log('window.location.hash', window.location.hash)
+    
     if(!window.location.hash) return
-    var top = $(window.location.hash).offset().top;
+    var top = $(`div[data-id="${window.location.hash}"]`).offset().top - 140;
     $('html,body').stop().animate({
       scrollTop: top
     }, 1000);
   });
+
+
+  $('.doc-link').on('click', function(e) {
+    e.preventDefault()
+    var top = $(`div[data-id="${e.target.dataset.hash}"]`).offset().top - 140;
+    $('html,body').stop().animate({
+      scrollTop: top
+    }, 1000);
+  })

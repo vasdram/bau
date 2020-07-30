@@ -72,6 +72,10 @@ const config = {
       template: path.resolve(__dirname, './src/about.html')
     }),
     new HTMLWebpackPlugin({
+      filename: 'card-branch.html',
+      template: path.resolve(__dirname, './src/card-branch.html')
+    }),
+    new HTMLWebpackPlugin({
       filename: 'docs.html',
       template: path.resolve(__dirname, './src/docs.html')
     }),
