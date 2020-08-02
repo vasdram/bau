@@ -69,40 +69,54 @@ const config = {
     }),
     new HTMLWebpackPlugin({
       filename: 'about.html',
-      template: path.resolve(__dirname, './src/about.html')
+      template: path.resolve(__dirname, './src/about.html'),
+      minify: false
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'service.html',
+      template: path.resolve(__dirname, './src/service.html'),
+      minify: false
     }),
     new HTMLWebpackPlugin({
       filename: 'card-branch.html',
-      template: path.resolve(__dirname, './src/card-branch.html')
+      template: path.resolve(__dirname, './src/card-branch.html'),
+      minify: false
     }),
     new HTMLWebpackPlugin({
       filename: 'docs.html',
-      template: path.resolve(__dirname, './src/docs.html')
+      template: path.resolve(__dirname, './src/docs.html'),
+      minify: false
     }),
     new HTMLWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, './src/index.html')
+      template: path.resolve(__dirname, './src/index.html'),
+      minify: false
     }),
     new HTMLWebpackPlugin({
       filename: 'contacts.html',
-      template: path.resolve(__dirname, './src/contacts.html')
+      template: path.resolve(__dirname, './src/contacts.html'),
+      minify: false
     }), 
     new HTMLWebpackPlugin({
       filename: 'catalog.html',
-      template: path.resolve(__dirname, './src/catalog.html')
+      template: path.resolve(__dirname, './src/catalog.html'),
+      minify: false
     }),
     new HTMLWebpackPlugin({
       filename: 'catalog-prod.html',
-      template: path.resolve(__dirname, './src/catalog-prod.html')
+      template: path.resolve(__dirname, './src/catalog-prod.html'),
+      minify: false
     }), 
     new HTMLWebpackPlugin({
       filename: 'contacts.html',
-      template: path.resolve(__dirname, './src/contacts.html')
+      template: path.resolve(__dirname, './src/contacts.html'),
+      minify: false
     }), 
     
     new HTMLWebpackPlugin({
       filename: 'card.html',
-      template: path.resolve(__dirname, './src/card.html')
+      template: path.resolve(__dirname, './src/card.html'),
+      minify: false
     }), 
     new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash].css' }),
     new CleanWebpackPlugin()

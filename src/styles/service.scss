@@ -1,0 +1,33 @@
+.service{
+    margin-top: 40px;
+  &__wrapper{
+    display: flex;
+    max-width: 960px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto 100px;
+  }
+  &__head {
+    margin-bottom: 40px;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__txt{
+    width: 45%;
+    line-height: 1.5;
+    &-header{
+        font-size: 22px;
+        margin-bottom: 10px;
+    } 
+  }
+  &__img{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 40%;
+    img{
+      max-width: 100%;
+    }
+  }
+}    
