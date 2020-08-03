@@ -12,7 +12,22 @@ export const carusel = () => {
             loop: true,
             items:4,
             nav:true,
-            autoplay: true
+            autoplay: true,
+            responsive : {
+                0 : {
+                    items:1,
+                    center: true,
+                },
+                480 : {
+                    items:2,
+                },
+                768 : {
+                    items:3,
+                },
+                 1024 : {
+                    items:4,
+                    }
+            }
         });
       });
 } 

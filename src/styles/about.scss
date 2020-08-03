@@ -31,3 +31,18 @@
     }
   }
 }    
+
+@media (max-width: 800px) {
+  .about__wrapper{
+      flex-direction: column;
+      padding: 0 20px;
+      margin-bottom: 40px;
+  }
+  .about__txt{
+      width: 100%;
+  }
+  .about__img{
+    width: 100%;
+    text-align: center;
+  }
+}

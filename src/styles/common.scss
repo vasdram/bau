@@ -36,3 +36,9 @@ body{
   font-size: 22px;
   text-transform: uppercase;
 }
+
+@media (max-width: 800px) {
+  .z{
+    padding-top: 0;
+  }
+}

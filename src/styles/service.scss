@@ -31,3 +31,19 @@
     }
   }
 }    
+
+
+@media (max-width: 800px) {
+  .service__wrapper{
+      flex-direction: column;
+      padding: 0 20px;
+      margin-bottom: 40px;
+  }
+  .service__txt{
+      width: 100%;
+  }
+  .service__img{
+    width: 100%;
+    text-align: center;
+  }
+}
