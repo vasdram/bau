@@ -17,6 +17,7 @@ export const carusel = () => {
                 0 : {
                     items:1,
                     center: true,
+                    margin: 10
                 },
                 480 : {
                     items:2,

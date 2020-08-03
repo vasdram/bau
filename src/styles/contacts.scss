@@ -69,3 +69,26 @@
   }
   
 }
+
+@media (max-width: 960px) {
+  .contacts__wrapper{
+    padding: 0 40px;
+  }
+  .contacts__map {
+    width: 48%;
+  }
+  .contacts__list{
+    width: 48%;
+  }
+}
+@media (max-width: 800px) {
+  .contacts__wrapper {
+    flex-direction: column;
+
+  }
+  .contacts__map,
+  .contacts__list{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

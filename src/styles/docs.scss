@@ -11,9 +11,11 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          flex-wrap: wrap;
       }
       &__sert-item{
           width: 250px;
+          margin-bottom: 20px;
       }
       &__sert-item-head{
           width: 230px;
@@ -41,4 +43,16 @@
           max-width: 200px;
           margin: auto;
       }
+}
+
+
+@media (max-width: 720px) {
+    .docs__sert-list{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 540px) {
+    .docs__sert-list{
+        justify-content: center;
+    }
 }
