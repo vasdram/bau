@@ -108,7 +108,7 @@ const feedbackFormContent = `<form class="form" action="">
         <label class="checkbox">
             <input type="checkbox" class="checkbox__input" name="" id="">
             <div class="checkbox__img"></div>
-            <a href="" class="checkbox__text">Cогласие на обработку персональных данных</a>
+            <a href="snopd.html" class="checkbox__text">Cогласие на обработку персональных данных</a>
         </label>
     </div>
 </div>

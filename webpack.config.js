@@ -88,6 +88,11 @@ const config = {
       minify: false
     }),
     new HTMLWebpackPlugin({
+      filename: 'snopd.html',
+      template: path.resolve(__dirname, './src/snopd.html'),
+      minify: false
+    }),
+    new HTMLWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html'),
       minify: false
