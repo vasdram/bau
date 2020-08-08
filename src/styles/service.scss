@@ -8,6 +8,9 @@
     align-items: flex-start;
     margin: 0 auto 100px;
   }
+  &__form {
+    padding: 0 40px;
+  }
   &__head {
     margin-bottom: 40px;
     font-size: 28px;
@@ -47,3 +50,12 @@
     text-align: center;
   }
 }
+
+@media (max-width: 560px) {
+  .service__form {
+    .form__line{
+      flex-direction: column;
+    }
+  }
+}
+ 
