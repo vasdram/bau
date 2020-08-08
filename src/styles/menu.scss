@@ -11,10 +11,8 @@
     transition: width, .3s;
     &__sub-list {
         padding: 10px 25px;
-   
         li{
             padding: 0;
-     
         }
     }
     &__sub-item{
@@ -189,7 +187,7 @@
                     &:after {
                         content: "";
                         position: absolute;
-                        top: 4px;
+                        top: 6px;
                         right: -17px;
                         width: 10px;
                         height: 10px;
