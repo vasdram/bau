@@ -114,6 +114,9 @@
             height: 300px;
             overflow: hidden;
             position: relative;
+            img{
+                width: auto !important;
+            }
             &-desc{
                 position: absolute;
                 top: 10%;
