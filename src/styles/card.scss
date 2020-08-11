@@ -41,7 +41,8 @@
     }
     &__desc{
         width: 50%;
-        font-size: 16px;
+        font-size: 14px;
+        white-space: pre-line;
         line-height: 1.6;
         color: $gray;
         
