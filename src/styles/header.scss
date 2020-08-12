@@ -19,6 +19,7 @@
     &__phone {
         position: relative;
         display: none;
+        margin-top: 20px;
         &-item {
             margin-bottom: 5px;
             span{
@@ -29,7 +30,7 @@
         &-link{
             font-size: 20px;
             font-weight: 700;
-            color: $green;
+            color: $blue;
             text-decoration: none;
             margin-bottom: 5px;
             span {
@@ -52,7 +53,7 @@
                 top: 50%;
                 transform: translateY(-12px);
                 // border: 1px solid $green;
-                border-radius: 50%;    
+                border-radius: 50%;
                 left: 10px;
                 width: 20px;
                 height: 20px;
@@ -63,7 +64,7 @@
                 background-position: 50%;
             }
         }
-        
+
     }
     &__mail{
         position: relative;
@@ -78,7 +79,7 @@
                 top: 50%;
                 transform: translateY(-12px);
                 // border: 1px solid $green;
-                border-radius: 50%;    
+                border-radius: 50%;
                 left: 10px;
                 width: 20px;
                 height: 20px;
@@ -114,9 +115,9 @@
 @media (min-width: 800px) {
     .header{
         padding: 10px 20px 0;
-        
+
         //height: 90px;
-       // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1); 
+       // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
        border-bottom: 1px solid $green;
        &__btns{
         display: flex;
@@ -131,6 +132,6 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-        }     
-    }   
+        }
+    }
 }
