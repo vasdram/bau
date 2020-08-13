@@ -20,11 +20,12 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;   
-        border: 1px solid rgba(0,0,0,.3);
+        border: 1px solid rgba(0,138,95,.3);
         border-top: 2px solid $green;
         padding-bottom: 40px;
         margin-top: 80px;
         position: relative;
+        padding-right: 10px;
         &:after {
             content: '';
           
@@ -105,15 +106,15 @@
         width: 650px;
         display: flex;
         justify-content: flex-start;
-        margin-top: -39px;
+        margin-top: -40px;
         &-item{
             padding: 10px 15px;
             font-size: 14px;
             text-align: center;
             width: 25%;
             background-color: $white;
-            // border-bottom: 1px solid transparent;
             border: 2px solid $green;
+            border-bottom: none;
             margin-left: -1px;
             cursor: pointer;
             transition: all .3s;
@@ -158,10 +159,22 @@
             // list-style: disc;
             // margin-left: 20px;
             li {
-                background-image: url(../../src/images/shest.svg);
-                background-repeat: no-repeat;
-                padding-left: 30px;
+                position: relative;
+                padding-left: 20px;
                 margin-bottom: 10px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -5px;
+                    width: 10px;
+                    height: 10px;
+                    background-image: url(../../src/images/shest.svg);
+                    background-repeat: no-repeat;
+                    
+                }
+                
             }
         }
     }
