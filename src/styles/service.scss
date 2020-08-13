@@ -1,5 +1,10 @@
 .service{
     margin-top: 40px;
+    &__btn{
+      display: block;
+      width: 280px;
+      margin: 20px auto 40px;
+    }
   &__wrapper{
     display: flex;
     max-width: 960px;
@@ -37,6 +42,9 @@
 
 
 @media (max-width: 800px) {
+  .service{
+    margin-top: 0;
+  }
   .service__wrapper{
       flex-direction: column;
       padding: 0 20px;

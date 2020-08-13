@@ -47,6 +47,9 @@
 
 
 @media (max-width: 720px) {
+    .docs__head{
+        margin-top: 0;
+    }
     .docs__sert-list{
         padding: 0 20px;
     }

@@ -37,9 +37,14 @@ body{
   text-transform: uppercase;
 }
 
+ul{
+  // list-style: url(../images/shest.svg);
+}
+
 @media (max-width: 800px) {
   
   .page-header{
     padding: 0 40px;
+    margin-top: 0;
   }
 }

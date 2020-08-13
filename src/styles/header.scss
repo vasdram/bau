@@ -115,10 +115,10 @@
 @media (min-width: 800px) {
     .header{
         padding: 10px 20px 0;
-
-        //height: 90px;
-       // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
-       border-bottom: 1px solid $green;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        // height: 90px;
+        // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
+        // border-bottom: 1px solid $green;
        &__btns{
         display: flex;
        }

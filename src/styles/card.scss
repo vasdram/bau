@@ -61,12 +61,26 @@
         }
     }
     &__img-opt ul{
-        list-style: disc;
+        // list-style: disc;
         margin-left: 20px;
         color: $green;
     }
     &__options{
-        width: 60%;
+        max-width: 426px;
+        border: 1px solid rgba(0,0,0,.3);
+        border-top: none;
+        position: relative;
+        &:after {
+            content: '';
+          
+            position: absolute;
+            left: -2px;
+            bottom: -2px;
+            
+            width: 30px;
+            height: 30px;
+            background-image: url(../images/angl.svg);
+        }
     }
     &__options-tabs{
         // border-bottom: 1px solid $green;
@@ -110,7 +124,6 @@
         display: none;
         padding-left: 20px;
         padding-right: 20px;
-        height: 160px;
         
         &.active{
             display: block;
@@ -120,8 +133,14 @@
             }
         }
         ul{
-            list-style: disc;
-            margin-left: 20px;
+            // list-style: disc;
+            // margin-left: 20px;
+            li {
+                background-image: url(../../src/images/shest.svg);
+                background-repeat: no-repeat;
+                padding-left: 30px;
+                margin-bottom: 10px;
+            }
         }
     }
 }
@@ -141,8 +160,10 @@
             margin-bottom: 20px;
         }
     }
+    .card_branch .card__img{width: auto;}
     .card__options{
         width: 100%;
+        
     }
     .card__btn{
         display: block;
