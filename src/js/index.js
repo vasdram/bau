@@ -32,8 +32,7 @@ document.addEventListener('click', (e) => {
     }
 
     if(e.target.classList.contains('sert__img-img')) {
-        
-        sertModal.open()
+      sertModal.open()
     }
 })
 
