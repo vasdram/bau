@@ -7,11 +7,8 @@ class Modal {
     this.target = options.target || ""
     // this.isLarge = options.isLarge || false
     // this._create()
-
-    document.querySelector(`.${this.target}`).addEventListener('click', (e) => {
-      if(!e.target.dataset.close) return 
-      this.close()
-    })
+    this._closeHandler()
+    
   }
 
   // _create() {
@@ -33,6 +30,16 @@ class Modal {
   //     this.close()
   //   })
   // }
+
+  _closeHandler() {
+    if(!document.querySelector(`.${this.target}`) ) return;
+
+      document.querySelector(`.${this.target}`).addEventListener('click', (e) => {
+        if(!e.target.dataset.close) return 
+        this.close()
+      })
+    
+  }
 
   open() {
      document.querySelector(`.${this.target}`).classList.add('open')
