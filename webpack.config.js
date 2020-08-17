@@ -31,18 +31,19 @@ const config = {
       {
         test: /\.s[ac]ss$/,
         use: [
-          { loader: 'style-loader' },
+          'style-loader',
           { loader: MiniCssExtractPlugin.loader },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' }
+          { loader: 'css-loader', options: {importLoaders: 1} },
+          // 'postcss-loader',
+          'sass-loader'
         ]
       },
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
+          'style-loader',
           { loader: MiniCssExtractPlugin.loader },
-          { loader: 'css-loader' },
+          'css-loader',
         ]
       },
       {
@@ -54,6 +55,29 @@ const config = {
           publicPath: '../images/'
         }
       }
+      // {
+      //   test: /\.svg$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[ext]',
+      //         outputPath: 'images/',
+      //         publicPath: '../images/'
+      //       }
+      //     },
+      //     {
+      //       loader: 'svgo-loader',
+      //       options: {
+      //         plugins: [
+      //           {removeTitle: true},
+      //           {convertColors: {shorthex: false}},
+      //           {convertPathData: false}
+      //         ]
+      //       }
+      //     }
+      //   ]
+      // }
     ]
   },
   plugins: [
