@@ -34,9 +34,11 @@
     cursor: pointer;
     margin-top: 10px;
     width: 50%;
-    img{
-      max-width: 100%;
-    }
+    overflow: hidden;
+    max-height: 400px;
+    // img{
+    //   max-width: 100%;
+    // }
   }
 }    
 

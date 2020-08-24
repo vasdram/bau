@@ -38,7 +38,7 @@ document.addEventListener('click', (e) => {
 
 
 $(window).on('load', function(){
-    console.log('window.location.hash', window.location.hash)
+    document.querySelector('body').classList.add('loaded')
     
     if(!window.location.hash) return
     var top = $(`div[data-id="${window.location.hash}"]`).offset().top - 140;

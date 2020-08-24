@@ -45,9 +45,16 @@
     &__literature-item{
         width: 120px;
         margin-right: 20px;
+        text-align: center;
+    }
+    &__literature-link {
         display: block;
+        text-decoration: none;
         img{
             max-width: 100%;
+        }
+        &:hover{
+            text-decoration: none;
         }
     }
     &__head{
@@ -140,7 +147,7 @@
     &__options-item {
         font-size: 14px;
         line-height: 1.4;
-        color: $gray;
+        // color: $gray;
         display: none;
         padding-left: 20px;
         padding-right: 20px;
