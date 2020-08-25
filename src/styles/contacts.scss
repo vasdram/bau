@@ -19,7 +19,6 @@
   }
   &__item{
     font-size: 16px;
-    color: $blue;
     line-height: 1.4;
     margin-bottom: 10px;
     position: relative;
@@ -68,6 +67,7 @@
     }
     a{
       font-weight: 700;
+      color: $blue;
     }
   }
 
