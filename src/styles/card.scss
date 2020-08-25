@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 .card {
-    width: 70%; 
+    width: 70%;
     &_branch{
         width: 100%;
         .card__desc{
@@ -9,7 +9,7 @@
             font-size: 16px;
             line-height: 1.6;
             color: $gray;
-            
+
         }
         .card__img{
             width: 30%;
@@ -19,7 +19,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;   
+        flex-direction: row;
         border: 1px solid rgba(0,138,95,.3);
         border-top: 2px solid $green;
         padding-bottom: 40px;
@@ -28,7 +28,7 @@
         padding-right: 10px;
         &:after {
             content: '';
-          
+
             position: absolute;
             left: -2px;
             bottom: -2px;
@@ -49,6 +49,7 @@
     }
     &__literature-link {
         display: block;
+        color: $blue;
         text-decoration: none;
         img{
             max-width: 100%;
@@ -69,7 +70,7 @@
         white-space: pre-line;
         line-height: 1.6;
         color: $gray;
-        
+
     }
     &__img-wrapper{
         width: 40%;
@@ -95,11 +96,11 @@
         position: relative;
         // &:after {
         //     content: '';
-          
+
         //     position: absolute;
         //     left: -2px;
         //     bottom: -2px;
-            
+
         //     width: 30px;
         //     height: 30px;
         //     background-image: url(../images/angl.svg);
@@ -123,7 +124,7 @@
             margin-left: -1px;
             cursor: pointer;
             transition: all .3s;
-            &:hover, 
+            &:hover,
             &.active{
                 border-bottom-color: $green;
                 background-color: $green;
@@ -177,9 +178,9 @@
                     height: 10px;
                     background-image: url(../../src/images/shest.svg);
                     background-repeat: no-repeat;
-                    
+
                 }
-                
+
             }
         }
     }
