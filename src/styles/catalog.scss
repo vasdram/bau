@@ -25,9 +25,9 @@
                 transition: all .3s;
                 a {
                     color: $black;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-decoration: none;
-                    font-weight: 300;
+                    font-weight: 500;
                     transition: all .3s;
                     &:hover{
                         text-decoration: none;
@@ -38,7 +38,7 @@
                     position: absolute;
                     right: 10px;
                     top: 10px;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 700;
                 }
                 &:hover{
@@ -50,11 +50,11 @@
                     font-weight: 700;
                     .catalog__nav-chart-sub-list{
                         display: block;
-                        font-weight: 300;
+                        font-weight: 500;
                     }
                     &:after{
                         content: "–";
-                        
+
                     }
                 }
             }
@@ -66,7 +66,7 @@
             }
             &-sub-item{
                 border-top: 1px solid rgba(0,0,0, .3);
-                
+
                 padding: 10px 0 10px 10px;
                 display: block;
                 a{
@@ -132,7 +132,7 @@
                 overflow: hidden;
                 img{
                     max-width: 100%;
-                }    
+                }
             }
         }
     }
@@ -179,7 +179,7 @@
                 justify-content: center;
                 img{
                     max-width: 100%;
-                }     
+                }
             }
             &-desc{
                 font-size: 12px;
