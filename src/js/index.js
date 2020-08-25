@@ -19,8 +19,8 @@ menuHandler()
 
 
 document.addEventListener('click', (e) => {
-    
-    
+
+
     if(e.target.classList.contains('header__phone-btn')) {
         e.preventDefault()
         orderCallForm.open()
@@ -40,20 +40,20 @@ document.addEventListener('click', (e) => {
 $(window).on('load', function(){
   setTimeout(() => {
     document.querySelector('body').classList.add('loaded')
-  }, 1000)
-    
+  }, 500)
+
     if(!window.location.hash) return
     var top = $(`div[data-id="${window.location.hash}"]`).offset().top - 140;
     $('html,body').stop().animate({
       scrollTop: top
-    }, 1000);
+    }, 500);
   });
 
 
   $('.doc-link').on('click', function(e) {
-    
+
     var top = $(`div[data-id="${e.target.dataset.hash}"]`).offset().top - 140;
     $('html,body').stop().animate({
       scrollTop: top
-    }, 1000);
+    }, 500);
   })
