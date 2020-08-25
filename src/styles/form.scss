@@ -1,16 +1,42 @@
-.form{
-    width: 100%;
-    &__btn-line{
-        margin: 10px 0;
-        text-align: center;
-        .btn{
-            margin: auto;
-        }
+.form {
+  width: 100%;
+  &__btn-line {
+    margin: 10px 0;
+    text-align: center;
+    .btn {
+      margin: auto;
     }
-    &__line{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }   
+  }
+  &__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+#jGrowl {
+  font-size: 18px;
+  margin: 0 12px;
+}
+.jGrowl.top-right {
+  left: 35% !important;
+  top: 35% !important;
+}
+#jGrowl .jGrowl-notification {
+  position: relative;
+  width: 320px;
+  padding: 15px;
+  text-align: center;
+  background: none repeat 0 0 #fff !important;
+  box-shadow: 0 0 0 7px $green !important;
+  border: 0 solid rgba(255, 255, 255, 0.49) !important;
+}
+#jGrowl .jGrowl-notification .jGrowl-close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  color: $green !important;
+}
+#jGrowl .jGrowl-notification .jGrowl-message {
+  color: $green !important;
 }
