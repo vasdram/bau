@@ -29,7 +29,7 @@
     &-header{
         font-size: 22px;
         margin-bottom: 10px;
-    } 
+    }
   }
   &__img{
     cursor: pointer;
@@ -61,9 +61,10 @@
     }
     &-txt{
       width: 65%;
+      font-size: 14px;
     }
   }
-}    
+}
 
 
 @media (max-width: 800px) {
@@ -91,4 +92,3 @@
     }
   }
 }
- 

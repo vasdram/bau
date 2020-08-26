@@ -15,6 +15,7 @@
   }
   &__txt{
     width: 55%;
+    font-size: 14px;
     line-height: 1.5;
   }
   &__img{
@@ -38,15 +39,15 @@
   .sert{
     margin-top: 40px;
     &__wrapper{
-      flex-direction: column;     
+      flex-direction: column;
     }
     &__txt{
-      width: 100%; 
+      width: 100%;
       padding: 0 20px;
     }
     &__img{
       width: 100%;
     }
-  
+
   }
 }
