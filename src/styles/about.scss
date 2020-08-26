@@ -1,11 +1,11 @@
 .about{
     margin-top: 40px;
   &__wrapper{
-    display: flex;
+    // display: flex;
     max-width: 960px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: flex-start;
     margin: 0 auto 100px;
   }
   &__head {
@@ -15,12 +15,17 @@
     text-align: center;
   }
   &__txt{
-    width: 45%;
+    // width: 45%;
     line-height: 1.5;
     font-size: 14px;
     &-header{
         font-size: 22px;
         margin-bottom: 10px;
+    }
+    img{
+      width: 40%;
+      float: right;
+      margin: 0 0 10px 25px;
     }
   }
   &__img{
@@ -44,6 +49,11 @@
   }
   .about__txt{
       width: 100%;
+      img {
+        float: none;
+        width: 100%;
+        margin: 20px auto;
+      }
   }
   .about__img{
     width: 100%;
