@@ -25,6 +25,7 @@
   &__txt{
     width: 45%;
     line-height: 1.5;
+    font-size: 14px;
     &-header{
         font-size: 22px;
         margin-bottom: 10px;
@@ -35,10 +36,32 @@
     margin-top: 10px;
     width: 50%;
     overflow: hidden;
-    max-height: 400px;
-    // img{
-    //   max-width: 100%;
-    // }
+    max-height: 300px;
+    img{
+      max-width: 100%;
+    }
+  }
+  &__prod{
+    margin: 40px 0;
+    .wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: top;
+    }
+    &-img{
+      width: 30%;
+      height: 220px;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      img{
+        max-width: 100%;
+      }
+    }
+    &-txt{
+      width: 65%;
+    }
   }
 }    
 
