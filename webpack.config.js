@@ -141,7 +141,11 @@ const config = {
       template: path.resolve(__dirname, './src/contacts.html'),
       minify: false
     }), 
-    
+    new HTMLWebpackPlugin({
+      filename: '404.html',
+      template: path.resolve(__dirname, './src/404.html'),
+      minify: false
+    }), 
     new HTMLWebpackPlugin({
       filename: 'card.html',
       template: path.resolve(__dirname, './src/card.html'),
