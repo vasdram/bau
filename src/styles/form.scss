@@ -24,11 +24,12 @@
 }
 #jGrowl .jGrowl-notification {
   position: relative;
-  width: 320px;
+  width: 400px;
   padding: 15px;
   text-align: center;
-  background: none repeat 0 0 #fff !important;
-  box-shadow: 0 0 0 7px $green !important;
+  background-color: #fff !important;
+  // background: none repeat 0 0 #fff !important;
+  box-shadow: 0 0 0 2px $green !important;
   border: 0 solid rgba(255, 255, 255, 0.49) !important;
 }
 #jGrowl .jGrowl-notification .jGrowl-close {
