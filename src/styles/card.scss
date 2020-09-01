@@ -3,6 +3,8 @@
 .card {
     width: 70%;
     &-branch{
+        padding-left: 20px;
+        padding-right: 20px;
         &__img{
             margin: 25px 40px 20px 0;
             float: left;
@@ -228,7 +230,7 @@
             margin-bottom: 20px;
         }
     }
-    .card_branch .card__img{width: auto;}
+    .card-branch__img{float: none; width: auto; margin: 20px auto; display: block;}
     .card__options{
         width: 100%;
         &::after{
