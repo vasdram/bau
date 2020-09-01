@@ -13,14 +13,18 @@
             }
         }
     }
-    &__slide{
+    &__slide {
         height: 400px;
         overflow: hidden;
         position: relative;
+        &-btn {
+            max-width: 200px;
+            margin-top: 20px;
+        }
         &-desc{
             max-width: 960px;
             position: absolute;
-            top: 55%;
+            top: 40%;
             left: 20%;
             color: $white;
             width: 600px;
@@ -124,6 +128,7 @@
                 left: 10%;
                 color: $white;
                 z-index: 20;
+                width: auto;
                 transform: translate(0, 0);
             }
             &-head{
