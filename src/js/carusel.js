@@ -6,13 +6,18 @@ export const carusel = () => {
             loop: true,
             items:1,
             nav:true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:false,
         });
 
         $('.owl-carousel-2').owlCarousel({
             loop: true,
             items:4,
             nav:true,
-            autoplay: true,
+            autoplay:true,
+            autoplayTimeout:3000,   
+            autoplayHoverPause:false,
             responsive : {
                 0 : {
                     items:1,
