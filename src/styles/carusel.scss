@@ -29,17 +29,20 @@
             color: $white;
             width: 600px;
             z-index: 20;
+            // padding: 20px;
         }
         &-head{
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 20px;
+            padding: 1px 5px;
             background-color: rgba(0,0,0,.35);
         }
         &-txt{
+            padding: 1px 5px;
             width: 60%;
-            line-height: 1.4;
             background-color: rgba(0,0,0,.35);
+            line-height: 1.4;
         }
     }
     &:hover{
@@ -126,7 +129,8 @@
             }
             &-desc{
                 position: absolute;
-                bottom: 10%;
+                bottom: 15%;
+                top: auto;
                 left: 10%;
                 color: $white;
                 z-index: 20;
@@ -134,13 +138,22 @@
                 transform: translate(0, 0);
             }
             &-head{
-                font-size: 22px;
+                font-size: 18px;
                 font-weight: 700;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+                background-color: transparent;
             }
             &-txt{
-                width: 100%;
+                width: 90%;
                 line-height: 1.4;
+                font-size: 12px;
+                margin-bottom: 10px;
+                background-color: transparent;
+            }
+            &-btn{
+                width: 135px;
+                padding: 5px 10px;
+                font-size: 12px;
             }
         }
     }
