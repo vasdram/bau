@@ -8,7 +8,7 @@ export const carusel = () => {
             nav:true,
             autoplay:true,
             autoplayTimeout:5000,
-            autoplayHoverPause:false,
+            autoplayHoverPause:true,
         });
 
         $('.owl-carousel-2').owlCarousel({
@@ -16,8 +16,8 @@ export const carusel = () => {
             items:4,
             nav:true,
             autoplay:true,
-            autoplayTimeout:3000,   
-            autoplayHoverPause:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
             responsive : {
                 0 : {
                     items:1,
@@ -36,5 +36,5 @@ export const carusel = () => {
             }
         });
       });
-} 
+}
 
