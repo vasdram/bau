@@ -1,5 +1,5 @@
 class Modal {
-  
+
   constructor(options) {
     this.timeout = options.timeout || 200
     // this.content = options.content || ""
@@ -8,25 +8,25 @@ class Modal {
     // this.isLarge = options.isLarge || false
     // this._create()
     this._closeHandler()
-    
+
   }
 
   // _create() {
   //   this.modal = document.createElement("div")
-  //   this.modal.classList.add('modal') 
-  //   this.modal.insertAdjacentHTML("afterbegin", 
+  //   this.modal.classList.add('modal')
+  //   this.modal.insertAdjacentHTML("afterbegin",
   //     `
   //     <div class="modal__overlay" data-close="true"></div>
   //       <div class="modal__body ${this.isLarge ? "modal__body_large" : ""}">
   //           <div class="modal__close" data-close="true"></div>
-  //           <div class="modal__header">${this.header}</div> 
+  //           <div class="modal__header">${this.header}</div>
   //           ${this.content}
   //       </div>
   //     `
   //   )
   //   document.body.appendChild(this.modal)
   //   this.modal.addEventListener('click', (e) => {
-  //     if(!e.target.dataset.close) return 
+  //     if(!e.target.dataset.close) return
   //     this.close()
   //   })
   // }
@@ -35,10 +35,10 @@ class Modal {
     if(!document.querySelector(`.${this.target}`) ) return;
 
       document.querySelector(`.${this.target}`).addEventListener('click', (e) => {
-        if(!e.target.dataset.close) return 
+        if(!e.target.dataset.close) return
         this.close()
       })
-    
+
   }
 
   open() {
@@ -86,7 +86,7 @@ class Modal {
 
 // <div class="form__btn-line">
 //     <button class="btn btn_green">Отправить</button>
-// </div> 
+// </div>
 // </form>`;
 // const feedbackFormContent = `<form class="form" action="">
 // <div class="form__line">
@@ -114,7 +114,7 @@ class Modal {
 // </div>
 
 // <div class="form__line">
-//     <div class="input__line">    
+//     <div class="input__line">
 //         <label class="checkbox">
 //             <input type="checkbox" class="checkbox__input" name="" id="">
 //             <div class="checkbox__img"></div>
@@ -134,10 +134,10 @@ export const feedbackForm = new Modal({
   target: "feedbackForm"
 })
 
-export const orderCallForm = new Modal({
-  header: "Мы свяжемся с вами",
-  target: "orderCallForm"
-})
+// export const orderCallForm = new Modal({
+//   header: "Мы свяжемся с вами",
+//   target: "orderCallForm"
+// })
 
 export const sertModal = new Modal({
   header: "Сертификат",
