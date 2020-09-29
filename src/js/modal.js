@@ -134,10 +134,10 @@ export const feedbackForm = new Modal({
   target: "feedbackForm"
 })
 
-// export const orderCallForm = new Modal({
-//   header: "Мы свяжемся с вами",
-//   target: "orderCallForm"
-// })
+export const orderCallForm = new Modal({
+  header: "Мы свяжемся с вами",
+  target: "orderCallForm"
+})
 
 export const sertModal = new Modal({
   header: "Сертификат",
