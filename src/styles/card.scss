@@ -233,6 +233,8 @@
     .card-branch__img{float: none; width: auto; margin: 20px auto; display: block;}
     .card__options{
         width: 100%;
+        display: flex;
+        align-items: flex-start;
         &::after{
             content: "";
             display: none;
@@ -263,5 +265,22 @@
     }
     .card__options-tabs{
         flex-direction: column;
+        width: auto;
+        margin-top: 0;
+    }
+    .card__options-tabs-item{
+        width: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .card__options {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .card__options-tabs{
+        width: 100%;
     }
 }
