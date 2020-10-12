@@ -273,7 +273,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
     .card__options {
         width: 100%;
         display: flex;
@@ -282,5 +282,11 @@
     }
     .card__options-tabs{
         width: 100%;
+    }
+    .card__literature-list{
+        flex-wrap: wrap;
+    }
+    .card__literature-item{
+        margin: 20px;
     }
 }
